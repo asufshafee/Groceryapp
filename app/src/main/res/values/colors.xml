@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b0afaf</color>
+    <color name="colorPrimaryDark">#b0afaf</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fafafa</color>
+    <color name="colorSub">#b0afaf</color>
+    <color name="colorTex">#585858</color>
+    <color name="colordevider">#64dad8d8</color>
+    <color name="colorblue">#4c71f5</color>
+    <color name="colorgreen">#7FC544</color>
+    <color name="cartbutton">#f26b35</color>
+    <color name="backgrountofarrival">#f2f2f2</color>
+    <color name="greentextcolor">#4cbb17</color>
+    <color name="colorgrey">#c7c7c7</color>
+    <color name="darkgrey">#5c5c5c</color>
+    <color name="material_grey">#fafafa</color>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/msgsRplylayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp">
+
+        <RelativeLayout
+            android:id="@+id/friend_piclayout"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/green_round" />
+
+            <TextView
+                android:id="@+id/friendNameIntials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="A"
+                android:textColor="@color/material_grey"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/friendName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/friend_piclayout"
+            android:layout_alignTop="@+id/friend_piclayout"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/friend_piclayout"
+            android:gravity="center_vertical"
+            android:text="Admin"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/friendMsgDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/friend_piclayout"
+            android:layout_alignTop="@+id/friend_piclayout"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/friendName"
+            android:gravity="center_vertical"
+            android:text="3 mins ago"
+            android:visibility="gone"
+            android:textColor="#5e5d5d" />
+
+        <TextView
+            android:id="@+id/friend_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/friendName"
+            android:layout_below="@+id/friend_piclayout"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/msg_rect_bg"
+            android:padding="8dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 15" />
+    </RelativeLayout>
+
+    <!--Message Layout-->
+    <RelativeLayout
+        android:id="@+id/userMsgLayout"
+        android:layout_below="@+id/msgsRplylayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp">
+
+        <RelativeLayout
+            android:id="@+id/me_piclayout"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/location"
+                app:civ_border_width="0dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/meName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/me_piclayout"
+            android:layout_marginBottom="17dp"
+            android:layout_toStartOf="@+id/me_piclayout"
+            android:gravity="center_vertical"
+            android:text="Thangmam"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/meMsgDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/me_msg"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/me_piclayout"
+            android:gravity="center_vertical"
+            android:text="2 mins ago"
+            android:visibility="gone"
+            android:textColor="#5e5d5d" />
+
+        <TextView
+            android:id="@+id/me_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toStartOf="@+id/me_piclayout"
+            android:background="@drawable/msg_rect_bg"
+            android:padding="2dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 15" />
+    </RelativeLayout>
+</RelativeLayout>

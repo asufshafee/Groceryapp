@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="@drawable/layout_with_border1"
+    android:orientation="vertical"
+    tools:context="com.example.geeksera.grocery.Stage1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_with_border"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pickup Details"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp">
+
+
+                    <RadioButton
+                        android:id="@+id/walk"
+                        android:checked="true"
+                        android:layout_width="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/radio_button" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/wallking" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Walking" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp">
+
+
+                    <RadioButton
+                        android:id="@+id/Car"
+                        android:layout_width="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/radio_button" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/cat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Driving" />
+                </LinearLayout>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Pickup Time"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/layout_with_border3">
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/Hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="11"
+                app:arrowTint="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/layout_with_border3">
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/Minit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="00"
+                app:arrowTint="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/layout_with_border3">
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/AMPM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AM"
+                app:arrowTint="@android:color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

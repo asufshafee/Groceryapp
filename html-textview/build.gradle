@@ -1,0 +1,19 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 26
+    }
+
+    // Do not abort build if lint finds errors
+    lintOptions {
+        abortOnError false
+    }
+    dependencies{
+        implementation 'com.squareup.okhttp:okhttp:2.7.2'
+        implementation 'com.squareup.okio:okio:1.13.0'
+    }
+}

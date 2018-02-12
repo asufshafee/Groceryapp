@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/friend_piclayout"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/green_round" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="A"
+            android:textColor="@color/material_grey"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/friendName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/friend_piclayout"
+        android:layout_alignTop="@+id/friend_piclayout"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/friend_piclayout"
+        android:gravity="center_vertical"
+        android:text="Admin"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/friendMsgDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/friend_piclayout"
+        android:layout_alignTop="@+id/friend_piclayout"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/friendName"
+        android:gravity="center_vertical"
+        android:text="3 mins ago"
+        android:textColor="#5e5d5d" />
+
+    <TextView
+        android:id="@+id/friend_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friendName"
+        android:layout_below="@+id/friend_piclayout"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/msg_rect_bg"
+        android:padding="8dp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 15" />
+</RelativeLayout>
